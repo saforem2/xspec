@@ -1,0 +1,914 @@
+XSPEC12>show all
+
+Sun Mar 16 11:12:57 2014
+ Auto-saving is done after every command.
+ Fit statistic in use: C-Statistic
+ Minimization technique: Levenberg-Marquardt
+    Convergence criterion = 0.01
+    Parameter fit deltas: 0.01 * parValue
+ Always calculate parameter derivatives using full (slower) numerical differentiation: No
+ Querying enabled.
+ Prefit-renorming enabled.
+ Solar abundance table: angr
+ Photoionization Cross-Section Table:
+    bcmc:  Balucinska-Church and McCammon, 1998
+ Cosmology in use: H0 = 70 q0 = 0 Lambda0 = 0.73
+ Model data directory: /soft/heasoft/heasoft-6.11/i686-pc-linux-gnu-libc2.11.1-0/../spectral/modelData/
+ Plot settings:
+   Showing of individual additive components is OFF.
+   Showing of background spectra is OFF.
+   Effective area normalization is OFF.
+   Current unit settings:
+      Energy     = keV
+      Wavelength = angstrom, with Y-Axis displayed per Hz
+   X-Axis data display mode: Energy
+   Spectra plots will be shifted to source frame by redshift value z: 0
+   Device: /xw
+   Plotting of line IDs is OFF.
+   Splashpage is ON.
+   xlog for data plots is ON.
+   ylog for data plots is OFF.
+
+   Default plot rebin settings for all plot groups:
+   Min. Signif.   Max. # Bins   Error Type
+        3.00000            12         quad
+
+ Responses read: 
+   halo_rmf.fits associated with spectrum 1 source 1
+      energies: 968 channels: 968
+ Distinct RMF files: 
+     halo_rmf.fits
+
+1 file 1 spectrum 
+Spectrum 1  Spectral Data File: sim3
+Net count rate (cts/s) for Spectrum:1  1.951e-01 +/- 4.417e-03
+ Assigned to Data Group 1 and Plot Group 1
+  Noticed Channels:  1-968
+  Telescope: HaloSat Instrument: SDD1  Channel Type: PHA
+  Exposure Time: 1e+04 sec
+ Using fit statistic: cstat
+ Using Response (RMF) File            halo_rmf.fits for Source 1
+ Using Auxiliary Response (ARF) File  halo_arf.fits
+
+ Spectral data counts: 1951
+ Model predicted rate: 0.191105
+
+
+Current model list:
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> + gaussian<4>) + vapec<5> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.225000     frozen
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   1.00000      frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.278000     +/-  2.72818E-02  
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.376000     +/-  1.37352E-02  
+  20    4   gaussian   LineE      keV      0.597336     frozen
+  21    4   gaussian   Sigma      keV      5.03316E-02  frozen
+  22    4   gaussian   norm                0.0          frozen
+  23    5   vapec      kT         keV      9.90000E-02  frozen
+  24    5   vapec      He                  1.00000      frozen
+  25    5   vapec      C                   1.00000      frozen
+  26    5   vapec      N                   1.00000      frozen
+  27    5   vapec      O                   1.00000      frozen
+  28    5   vapec      Ne                  1.00000      frozen
+  29    5   vapec      Mg                  1.00000      frozen
+  30    5   vapec      Al                  1.00000      frozen
+  31    5   vapec      Si                  1.00000      frozen
+  32    5   vapec      S                   1.00000      frozen
+  33    5   vapec      Ar                  1.00000      frozen
+  34    5   vapec      Ca                  1.00000      frozen
+  35    5   vapec      Fe                  1.00000      frozen
+  36    5   vapec      Ni                  1.00000      frozen
+  37    5   vapec      Redshift            0.0          frozen
+  38    5   vapec      norm                0.661000     +/-  8.08451E-02  
+________________________________________________________________________
+
+   Using energies from responses.
+
+ C-Statistic =         979.10 using 968 PHA bins and 965 degrees of freedom.
+ Current data and model not fit yet.
+ Weighting method: standard
+
+*****************************************************
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl       17:norm       19:norm       38:norm
+977.498       -3      0.273258      0.380763      0.741127
+977.497       -4      0.273167      0.380805      0.743074
+========================================
+ Variances and Principal Axes
+                17       19       38  
+ 1.3860E-04| -0.3366  -0.9397  -0.0597  
+ 5.2624E-04|  0.9228  -0.3418   0.1776  
+ 6.7940E-03|  0.1873  -0.0047  -0.9823  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   7.021e-04  -1.281e-04  -1.161e-03
+  -1.281e-04   1.840e-04   7.143e-06
+  -1.161e-03   7.143e-06   6.573e-03
+------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> + gaussian<4>) + vapec<5> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.225000     frozen
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   1.00000      frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.273167     +/-  2.64974E-02  
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.380805     +/-  1.35662E-02  
+  20    4   gaussian   LineE      keV      0.597336     frozen
+  21    4   gaussian   Sigma      keV      5.03316E-02  frozen
+  22    4   gaussian   norm                0.0          frozen
+  23    5   vapec      kT         keV      9.90000E-02  frozen
+  24    5   vapec      He                  1.00000      frozen
+  25    5   vapec      C                   1.00000      frozen
+  26    5   vapec      N                   1.00000      frozen
+  27    5   vapec      O                   1.00000      frozen
+  28    5   vapec      Ne                  1.00000      frozen
+  29    5   vapec      Mg                  1.00000      frozen
+  30    5   vapec      Al                  1.00000      frozen
+  31    5   vapec      Si                  1.00000      frozen
+  32    5   vapec      S                   1.00000      frozen
+  33    5   vapec      Ar                  1.00000      frozen
+  34    5   vapec      Ca                  1.00000      frozen
+  35    5   vapec      Fe                  1.00000      frozen
+  36    5   vapec      Ni                  1.00000      frozen
+  37    5   vapec      Redshift            0.0          frozen
+  38    5   vapec      norm                0.743074     +/-  8.10721E-02  
+________________________________________________________________________
+ C-Statistic =         977.50 using 968 PHA bins and 965 degrees of freedom.
+
+
+*****************************************************
+XSPEC12>thaw 2
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl          2:kT       17:norm       19:norm       38:norm
+977.12        -3      0.232880      0.260769      0.378688      0.782781
+977.118       -4      0.233307      0.260853      0.378683      0.783227
+==================================================
+ Variances and Principal Axes
+                 2       17       19       38  
+ 7.7345E-05| -0.8587  -0.2601  -0.4415   0.0073  
+ 1.8461E-04|  0.4862  -0.1584  -0.8539  -0.0965  
+ 5.4693E-04| -0.1367   0.9244  -0.2749   0.2263  
+ 1.1672E-02| -0.0868   0.2297   0.0175  -0.9692  
+--------------------------------------------------
+
+================================================
+  Covariance Matrix
+        1           2           3           4   
+   1.989e-04  -2.989e-04  -4.453e-05   9.564e-04
+  -2.989e-04   1.093e-03  -5.814e-05  -2.481e-03
+  -4.453e-05  -5.814e-05   1.946e-04  -2.174e-04
+   9.564e-04  -2.481e-03  -2.174e-04   1.099e-02
+------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> + gaussian<4>) + vapec<5> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.233307     +/-  1.41044E-02  
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   1.00000      frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.260853     +/-  3.30582E-02  
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378683     +/-  1.39506E-02  
+  20    4   gaussian   LineE      keV      0.597336     frozen
+  21    4   gaussian   Sigma      keV      5.03316E-02  frozen
+  22    4   gaussian   norm                0.0          frozen
+  23    5   vapec      kT         keV      9.90000E-02  frozen
+  24    5   vapec      He                  1.00000      frozen
+  25    5   vapec      C                   1.00000      frozen
+  26    5   vapec      N                   1.00000      frozen
+  27    5   vapec      O                   1.00000      frozen
+  28    5   vapec      Ne                  1.00000      frozen
+  29    5   vapec      Mg                  1.00000      frozen
+  30    5   vapec      Al                  1.00000      frozen
+  31    5   vapec      Si                  1.00000      frozen
+  32    5   vapec      S                   1.00000      frozen
+  33    5   vapec      Ar                  1.00000      frozen
+  34    5   vapec      Ca                  1.00000      frozen
+  35    5   vapec      Fe                  1.00000      frozen
+  36    5   vapec      Ni                  1.00000      frozen
+  37    5   vapec      Redshift            0.0          frozen
+  38    5   vapec      norm                0.783227     +/-  0.104855     
+________________________________________________________________________
+ C-Statistic =         977.12 using 968 PHA bins and 964 degrees of freedom.
+XSPEC12>error 2, 17, 19, 38
+ Parameter   Confidence Range (2.706)
+     2     0.210495     0.260467    (-0.0228117,0.0271601)
+    17      0.20724     0.316033    (-0.0536131,0.0551804)
+    19     0.356155     0.402047    (-0.0225288,0.0233638)
+    38     0.614402     0.959359    (-0.168825,0.176132)
+XSPEC12>
+
+
+*****************************************************
+newpar 6 0.0
+newpar 27 0.0
+addcomp 6 gauss
+0.561 -1
+0.001 -1
+0.0001
+addcomp 7 gauss
+0.653 -1
+0.001 -1
+0.0001
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl          2:kT       17:norm       19:norm       38:norm       41:norm       44:norm
+975.76        -3      0.221554      0.435103      0.378786      0.649862      0.231670      0.105296
+======================================================================
+ Variances and Principal Axes
+                 2       17       19       38       41       44  
+ 4.2223E-05| -0.9459  -0.1087  -0.2769   0.0045  -0.0194  -0.1281  
+ 1.8530E-04|  0.3012  -0.0154  -0.9098  -0.0427  -0.1767  -0.2195  
+ 2.5791E-04| -0.0483  -0.0011  -0.2818  -0.0050   0.2082   0.9353  
+ 5.8410E-04|  0.0412   0.0528  -0.1149   0.0108   0.9600  -0.2460  
+ 2.7186E-01| -0.0796   0.6620   0.0025  -0.7448  -0.0246  -0.0012  
+ 3.1363E-03| -0.0645   0.7395  -0.0541   0.6658  -0.0528  -0.0034  
+----------------------------------------------------------------------
+
+========================================================================
+  Covariance Matrix
+        1           2           3           4           5           6   
+   1.794e-03  -1.448e-02  -8.165e-05   1.599e-02   5.546e-04   9.609e-07
+  -1.448e-02   1.209e-01   3.205e-04  -1.325e-01  -4.519e-03  -2.223e-04
+  -8.165e-05   3.205e-04   1.956e-04  -6.073e-04  -5.712e-05  -1.317e-05
+   1.599e-02  -1.325e-01  -6.073e-04   1.522e-01   4.877e-03   2.255e-04
+   5.546e-04  -4.519e-03  -5.712e-05   4.877e-03   7.285e-04  -7.217e-05
+   9.609e-07  -2.223e-04  -1.317e-05   2.255e-04  -7.217e-05   2.710e-04
+------------------------------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> + gaussian<4>)  +  vapec<5>  + gaussian<6> + gaussian<7> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.221554     +/-  4.23508E-02  
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.435103     +/-  0.347657     
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378786     +/-  1.39874E-02  
+  20    4   gaussian   LineE      keV      0.597336     frozen
+  21    4   gaussian   Sigma      keV      5.03316E-02  frozen
+  22    4   gaussian   norm                0.0          frozen
+  23    5   vapec      kT         keV      9.90000E-02  frozen
+  24    5   vapec      He                  1.00000      frozen
+  25    5   vapec      C                   1.00000      frozen
+  26    5   vapec      N                   1.00000      frozen
+  27    5   vapec      O                   0.0          frozen
+  28    5   vapec      Ne                  1.00000      frozen
+  29    5   vapec      Mg                  1.00000      frozen
+  30    5   vapec      Al                  1.00000      frozen
+  31    5   vapec      Si                  1.00000      frozen
+  32    5   vapec      S                   1.00000      frozen
+  33    5   vapec      Ar                  1.00000      frozen
+  34    5   vapec      Ca                  1.00000      frozen
+  35    5   vapec      Fe                  1.00000      frozen
+  36    5   vapec      Ni                  1.00000      frozen
+  37    5   vapec      Redshift            0.0          frozen
+  38    5   vapec      norm                0.649862     +/-  0.390137     
+  39    6   gaussian   LineE      keV      0.561000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                0.231670     +/-  2.69907E-02  
+  42    7   gaussian   LineE      keV      0.653000     frozen
+  43    7   gaussian   Sigma      keV      1.00000E-03  frozen
+  44    7   gaussian   norm                0.105296     +/-  1.64625E-02  
+________________________________________________________________________
+ C-Statistic =         975.76 using 968 PHA bins and 962 degrees of freedom.
+XSPEC12>error 2, 17, 19, 38, 41, 44
+    17     0.061501      1.04674    (-0.373598,0.611636)
+    19     0.356198     0.402168    (-0.0225875,0.0233823)
+    38    0.0148125      1.14472    (-0.635054,0.494854)
+    41     0.187464     0.277641    (-0.0442057,0.0459707)
+    44    0.0791477     0.133323    (-0.026148,0.0280274)
+
+
+*****************************************************
+tie normalizations of lines to ratio measured by McCammon
+setpar 44 = 0.33*41
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl          2:kT       17:norm       19:norm       38:norm       41:norm
+977.922        0      0.239386      0.338260      0.378379      0.755436      0.256023
+============================================================
+ Variances and Principal Axes
+                 2       17       19       38       41  
+ 6.5597E-05| -0.8897  -0.1832  -0.4082   0.0016  -0.0910  
+ 1.9859E-04|  0.4190   0.0341  -0.8841  -0.0442  -0.1991  
+ 3.9465E-04| -0.0052   0.0331  -0.2209   0.0043   0.9747  
+ 2.6834E-01|  0.1358  -0.6576  -0.0023   0.7407   0.0193  
+ 3.1598E-03|  0.1203  -0.7292   0.0533  -0.6703   0.0404  
+------------------------------------------------------------
+
+============================================================
+  Covariance Matrix
+        1           2           3           4           5   
+   5.084e-03  -2.424e-02  -1.141e-04   2.674e-02   7.052e-04
+  -2.424e-02   1.177e-01   2.853e-04  -1.292e-01  -3.484e-03
+  -1.141e-04   2.853e-04   1.959e-04  -5.697e-04  -5.286e-05
+   2.674e-02  -1.292e-01  -5.697e-04   1.487e-01   3.751e-03
+   7.052e-04  -3.484e-03  -5.286e-05   3.751e-03   4.883e-04
+------------------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> + gaussian<4>)  +  vapec<5>  + gaussian<6> + gaussian<7> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.239386     +/-  7.13049E-02  
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.338260     +/-  0.343120     
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378379     +/-  1.39954E-02  
+  20    4   gaussian   LineE      keV      0.597336     frozen
+  21    4   gaussian   Sigma      keV      5.03316E-02  frozen
+  22    4   gaussian   norm                0.0          frozen
+  23    5   vapec      kT         keV      9.90000E-02  frozen
+  24    5   vapec      He                  1.00000      frozen
+  25    5   vapec      C                   1.00000      frozen
+  26    5   vapec      N                   1.00000      frozen
+  27    5   vapec      O                   0.0          frozen
+  28    5   vapec      Ne                  1.00000      frozen
+  29    5   vapec      Mg                  1.00000      frozen
+  30    5   vapec      Al                  1.00000      frozen
+  31    5   vapec      Si                  1.00000      frozen
+  32    5   vapec      S                   1.00000      frozen
+  33    5   vapec      Ar                  1.00000      frozen
+  34    5   vapec      Ca                  1.00000      frozen
+  35    5   vapec      Fe                  1.00000      frozen
+  36    5   vapec      Ni                  1.00000      frozen
+  37    5   vapec      Redshift            0.0          frozen
+  38    5   vapec      norm                0.755436     +/-  0.385557     
+  39    6   gaussian   LineE      keV      0.561000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                0.256023     +/-  2.20986E-02  
+  42    7   gaussian   LineE      keV      0.653000     frozen
+  43    7   gaussian   Sigma      keV      1.00000E-03  frozen
+  44    7   gaussian   norm                8.44876E-02  = 0.33*41
+________________________________________________________________________
+
+
+ C-Statistic =         977.92 using 968 PHA bins and 963 degrees of freedom.
+XSPEC12>error 2, 17, 19, 38, 41
+ Parameter   Confidence Range (2.706)
+     2     0.189825     0.588654    (-0.0495606,0.349268)
+    17    0.0667157     0.904498    (-0.271544,0.566238)
+    19     0.355779     0.401812    (-0.0226,0.0234332)
+    38     0.154163      1.12762    (-0.601273,0.372183)
+    41     0.220622     0.292811    (-0.0354016,0.0367883)
+XSPEC12>
+
+
+*****************************************************
+newpar 2 0.225 -1
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl       17:norm       19:norm       38:norm       41:norm
+977.986       -3      0.423806      0.378838      0.660975      0.253549
+==================================================
+ Variances and Principal Axes
+                17       19       38       41  
+ 1.4450E-04| -0.1300  -0.9668  -0.0289  -0.2181  
+ 3.9429E-04|  0.0354  -0.2245   0.0038   0.9738  
+ 2.2798E-03| -0.9110   0.1200  -0.3896   0.0623  
+ 1.0298E-02|  0.3898  -0.0214  -0.9205  -0.0155  
+--------------------------------------------------
+
+================================================
+  Covariance Matrix
+        1           2           3           4   
+   3.460e-03  -3.203e-04  -2.885e-03  -1.741e-04
+  -3.203e-04   1.925e-04   1.002e-04  -3.527e-05
+  -2.885e-03   1.002e-04   9.072e-03   9.435e-05
+  -1.741e-04  -3.527e-05   9.435e-05   3.921e-04
+------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> + gaussian<4>)  +  vapec<5>  + gaussian<6> + gaussian<7> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.225000     frozen
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.423806     +/-  5.88204E-02  
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378838     +/-  1.38755E-02  
+  20    4   gaussian   LineE      keV      0.597336     frozen
+  21    4   gaussian   Sigma      keV      5.03316E-02  frozen
+  22    4   gaussian   norm                0.0          frozen
+  23    5   vapec      kT         keV      9.90000E-02  frozen
+  24    5   vapec      He                  1.00000      frozen
+  25    5   vapec      C                   1.00000      frozen
+  26    5   vapec      N                   1.00000      frozen
+  27    5   vapec      O                   0.0          frozen
+  28    5   vapec      Ne                  1.00000      frozen
+  29    5   vapec      Mg                  1.00000      frozen
+  30    5   vapec      Al                  1.00000      frozen
+  31    5   vapec      Si                  1.00000      frozen
+  32    5   vapec      S                   1.00000      frozen
+  33    5   vapec      Ar                  1.00000      frozen
+  34    5   vapec      Ca                  1.00000      frozen
+  35    5   vapec      Fe                  1.00000      frozen
+  36    5   vapec      Ni                  1.00000      frozen
+  37    5   vapec      Redshift            0.0          frozen
+  38    5   vapec      norm                0.660975     +/-  9.52465E-02  
+  39    6   gaussian   LineE      keV      0.561000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                0.253549     +/-  1.98019E-02  
+  42    7   gaussian   LineE      keV      0.653000     frozen
+  43    7   gaussian   Sigma      keV      1.00000E-03  frozen
+  44    7   gaussian   norm                8.36712E-02  = 0.33*41
+________________________________________________________________________
+ C-Statistic =         977.99 using 968 PHA bins and 964 degrees of freedom.
+XSPEC12>error 17, 19, 38, 41
+ Parameter   Confidence Range (2.706)
+    17     0.329308     0.522772    (-0.0944977,0.0989662)
+    19     0.356444     0.402082    (-0.0223941,0.0232441)
+    38     0.506805     0.820287    (-0.154171,0.159312)
+    41     0.221764     0.286886    (-0.0317849,0.0333371)
+XSPEC12>
+
+
+
+*****************************************************
+realized there was an extra gaussian set to zero, deleted it
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl       17:norm       19:norm       35:norm       38:norm
+977.986        3      0.423806      0.378838      0.660975      0.253549
+==================================================
+ Variances and Principal Axes
+                17       19       35       38  
+ 1.4450E-04| -0.1300  -0.9668  -0.0289  -0.2181  
+ 3.9429E-04|  0.0354  -0.2245   0.0038   0.9738  
+ 2.2798E-03| -0.9110   0.1200  -0.3896   0.0623  
+ 1.0298E-02|  0.3898  -0.0214  -0.9205  -0.0155  
+--------------------------------------------------
+
+================================================
+  Covariance Matrix
+        1           2           3           4   
+   3.460e-03  -3.203e-04  -2.885e-03  -1.741e-04
+  -3.203e-04   1.925e-04   1.002e-04  -3.527e-05
+  -2.885e-03   1.002e-04   9.072e-03   9.435e-05
+  -1.741e-04  -3.527e-05   9.435e-05   3.921e-04
+------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> )   +   vapec<4>   +  gaussian<5>  +  gaussian<6> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.225000     frozen
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.423806     +/-  5.88204E-02  
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378838     +/-  1.38755E-02  
+  20    4   vapec      kT         keV      9.90000E-02  frozen
+  21    4   vapec      He                  1.00000      frozen
+  22    4   vapec      C                   1.00000      frozen
+  23    4   vapec      N                   1.00000      frozen
+  24    4   vapec      O                   0.0          frozen
+  25    4   vapec      Ne                  1.00000      frozen
+  26    4   vapec      Mg                  1.00000      frozen
+  27    4   vapec      Al                  1.00000      frozen
+  28    4   vapec      Si                  1.00000      frozen
+  29    4   vapec      S                   1.00000      frozen
+  30    4   vapec      Ar                  1.00000      frozen
+  31    4   vapec      Ca                  1.00000      frozen
+  32    4   vapec      Fe                  1.00000      frozen
+  33    4   vapec      Ni                  1.00000      frozen
+  34    4   vapec      Redshift            0.0          frozen
+  35    4   vapec      norm                0.660975     +/-  9.52465E-02  
+  36    5   gaussian   LineE      keV      0.561000     frozen
+  37    5   gaussian   Sigma      keV      1.00000E-03  frozen
+  38    5   gaussian   norm                0.253549     +/-  1.98019E-02  
+  39    6   gaussian   LineE      keV      0.653000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                8.36712E-02  = 0.33*38
+________________________________________________________________________
+ C-Statistic =         977.99 using 968 PHA bins and 964 degrees of freedom.
+XSPEC12>error 2, 17, 19, 35, 38, 41
+ Parameter   Confidence Range (2.706)
+    17     0.329308     0.522772    (-0.0944977,0.0989662)
+    19     0.356444     0.402082    (-0.0223941,0.0232441)
+    35     0.506805     0.820287    (-0.154171,0.159312)
+    38     0.221764     0.286886    (-0.0317849,0.0333371)
+XSPEC12>
+
+
+*****************************************************
+XSPEC12>thaw 2
+ C-Statistic =         977.99 using 968 PHA bins and 963 degrees of freedom.
+ Current data and model not fit yet.
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl          2:kT       17:norm       19:norm       35:norm       38:norm
+977.947       -2      0.230233      0.385639      0.378563      0.702880      0.254624
+977.933       -3      0.237326      0.344141      0.378400      0.748899      0.255848
+977.922       -4      0.239319      0.338399      0.378380      0.755275      0.256019
+977.922       -5      0.239387      0.338255      0.378379      0.755440      0.256023
+============================================================
+ Variances and Principal Axes
+                 2       17       19       35       38  
+ 6.5532E-05| -0.8899  -0.1830  -0.4079   0.0016  -0.0910  
+ 1.9855E-04|  0.4186   0.0339  -0.8843  -0.0442  -0.1992  
+ 3.9464E-04| -0.0052   0.0331  -0.2209   0.0043   0.9747  
+ 2.6829E-01|  0.1357  -0.6576  -0.0023   0.7408   0.0193  
+ 3.1597E-03|  0.1201  -0.7292   0.0533  -0.6703   0.0404  
+------------------------------------------------------------
+
+============================================================
+  Covariance Matrix
+        1           2           3           4           5   
+   5.070e-03  -2.420e-02  -1.140e-04   2.670e-02   7.041e-04
+  -2.420e-02   1.177e-01   2.853e-04  -1.292e-01  -3.484e-03
+  -1.140e-04   2.853e-04   1.959e-04  -5.697e-04  -5.285e-05
+   2.670e-02  -1.292e-01  -5.697e-04   1.486e-01   3.751e-03
+   7.041e-04  -3.484e-03  -5.285e-05   3.751e-03   4.883e-04
+------------------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> )   +   vapec<4>   +  gaussian<5>  +  gaussian<6> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.239387     +/-  7.12040E-02  
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.338255     +/-  0.343101     
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378379     +/-  1.39952E-02  
+  20    4   vapec      kT         keV      9.90000E-02  frozen
+  21    4   vapec      He                  1.00000      frozen
+  22    4   vapec      C                   1.00000      frozen
+  23    4   vapec      N                   1.00000      frozen
+  24    4   vapec      O                   0.0          frozen
+  25    4   vapec      Ne                  1.00000      frozen
+  26    4   vapec      Mg                  1.00000      frozen
+  27    4   vapec      Al                  1.00000      frozen
+  28    4   vapec      Si                  1.00000      frozen
+  29    4   vapec      S                   1.00000      frozen
+  30    4   vapec      Ar                  1.00000      frozen
+  31    4   vapec      Ca                  1.00000      frozen
+  32    4   vapec      Fe                  1.00000      frozen
+  33    4   vapec      Ni                  1.00000      frozen
+  34    4   vapec      Redshift            0.0          frozen
+  35    4   vapec      norm                0.755440     +/-  0.385538     
+  36    5   gaussian   LineE      keV      0.561000     frozen
+  37    5   gaussian   Sigma      keV      1.00000E-03  frozen
+  38    5   gaussian   norm                0.256023     +/-  2.20980E-02  
+  39    6   gaussian   LineE      keV      0.653000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                8.44876E-02  = 0.33*38
+________________________________________________________________________
+
+
+ C-Statistic =         977.92 using 968 PHA bins and 963 degrees of freedom.
+XSPEC12>error 2, 17, 19, 35, 38, 41
+*** Parameter 41 is not a variable model parameter and no confidence range will be calculated.
+ Parameter   Confidence Range (2.706)
+     2     0.189825     0.588654    (-0.049562,0.349267)
+    17    0.0667032     0.904497    (-0.271553,0.566241)
+    19     0.355779     0.401812    (-0.0225996,0.0234336)
+    35     0.154164      1.12762    (-0.601275,0.372179)
+    38     0.220604     0.292811    (-0.0354191,0.0367885)
+XSPEC12>
+
+
+*****************************************************
+XSPEC12>untie 41
+
+ C-Statistic =         977.92 using 968 PHA bins and 962 degrees of freedom.
+ Current data and model not fit yet.
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl          2:kT       17:norm       19:norm       35:norm       38:norm       41:norm
+976.097       -3      0.219652      0.419976      0.378705      0.666638      0.231721      0.103755
+975.76        -4      0.221508      0.435078      0.378806      0.649686      0.231677      0.105285
+975.76        -5      0.221555      0.435095      0.378785      0.649871      0.231670      0.105296
+======================================================================
+ Variances and Principal Axes
+                 2       17       19       35       38       41  
+ 4.2217E-05| -0.9459  -0.1087  -0.2769   0.0045  -0.0194  -0.1281  
+ 1.8530E-04|  0.3012  -0.0154  -0.9098  -0.0428  -0.1767  -0.2196  
+ 2.5786E-04| -0.0483  -0.0011  -0.2819  -0.0051   0.2081   0.9353  
+ 5.8405E-04|  0.0412   0.0528  -0.1149   0.0108   0.9600  -0.2460  
+ 2.7180E-01| -0.0796   0.6620   0.0025  -0.7448  -0.0246  -0.0012  
+ 3.1353E-03| -0.0644   0.7395  -0.0541   0.6658  -0.0528  -0.0034  
+----------------------------------------------------------------------
+
+========================================================================
+  Covariance Matrix
+        1           2           3           4           5           6   
+   1.793e-03  -1.447e-02  -8.162e-05   1.598e-02   5.544e-04   9.508e-07
+  -1.447e-02   1.208e-01   3.204e-04  -1.325e-01  -4.518e-03  -2.222e-04
+  -8.162e-05   3.204e-04   1.956e-04  -6.071e-04  -5.712e-05  -1.317e-05
+   1.598e-02  -1.325e-01  -6.071e-04   1.522e-01   4.876e-03   2.254e-04
+   5.544e-04  -4.518e-03  -5.712e-05   4.876e-03   7.284e-04  -7.216e-05
+   9.508e-07  -2.222e-04  -1.317e-05   2.254e-04  -7.216e-05   2.710e-04
+------------------------------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> )   +   vapec<4>   +  gaussian<5>  +  gaussian<6> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.221555     +/-  4.23387E-02  
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.435095     +/-  0.347624     
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378785     +/-  1.39873E-02  
+  20    4   vapec      kT         keV      9.90000E-02  frozen
+  21    4   vapec      He                  1.00000      frozen
+  22    4   vapec      C                   1.00000      frozen
+  23    4   vapec      N                   1.00000      frozen
+  24    4   vapec      O                   0.0          frozen
+  25    4   vapec      Ne                  1.00000      frozen
+  26    4   vapec      Mg                  1.00000      frozen
+  27    4   vapec      Al                  1.00000      frozen
+  28    4   vapec      Si                  1.00000      frozen
+  29    4   vapec      S                   1.00000      frozen
+  30    4   vapec      Ar                  1.00000      frozen
+  31    4   vapec      Ca                  1.00000      frozen
+  32    4   vapec      Fe                  1.00000      frozen
+  33    4   vapec      Ni                  1.00000      frozen
+  34    4   vapec      Redshift            0.0          frozen
+  35    4   vapec      norm                0.649871     +/-  0.390097     
+  36    5   gaussian   LineE      keV      0.561000     frozen
+  37    5   gaussian   Sigma      keV      1.00000E-03  frozen
+  38    5   gaussian   norm                0.231670     +/-  2.69895E-02  
+  39    6   gaussian   LineE      keV      0.653000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                0.105296     +/-  1.64607E-02  
+________________________________________________________________________
+
+
+ C-Statistic =         975.76 using 968 PHA bins and 962 degrees of freedom.
+XSPEC12>error 2, 17, 19, 35, 38, 41
+ Parameter   Confidence Range (2.706)
+     2     0.183832     0.622169    (-0.0377227,0.400614)
+***Warning: Zero alpha-matrix diagonal element for parameter 2
+ Parameter 2 is pegged due to zero or negative pivot element, likely
+   caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 2
+ Parameter 2 is pegged due to zero or negative pivot element, likely
+   caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 2
+ Parameter 2 is pegged due to zero or negative pivot element, likely
+   caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 2
+ Parameter 2 is pegged due to zero or negative pivot element, likely
+   caused by the fit being insensitive to the parameter.
+Apparent non-monotonicity in statistic space detected.
+Current bracket values 0.0922286, 0.0461143
+and delta stat 1.00326, 8.69631
+but latest trial 0.0789805 gives 0.905579
+Suggest that you check this result using the steppar command.
+    17    0.0691715      1.04673    (-0.365924,0.611637)
+    19     0.356169     0.402161    (-0.0226166,0.0233756)
+    35    0.0148116      1.14472    (-0.63506,0.494849)
+    38     0.187462     0.277646    (-0.044208,0.0459754)
+    41    0.0791477     0.133323    (-0.0261481,0.0280274)
+XSPEC12>
+
+
+XSPEC12>newpar 2 0.225 -1
+XSPEC12>fit
+                    Parameters
+C-Statistic  Lvl       17:norm       19:norm       35:norm       38:norm
+977.994       -3      0.418935      0.378893      0.664105      0.253785
+977.986       -4      0.423782      0.378839      0.660996      0.253550
+==================================================
+ Variances and Principal Axes
+                17       19       35       38  
+ 1.4431E-04| -0.1306  -0.9668  -0.0289  -0.2179  
+ 3.9421E-04|  0.0353  -0.2244   0.0038   0.9739  
+ 2.2690E-03| -0.9117   0.1207  -0.3878   0.0623  
+ 1.0248E-02|  0.3880  -0.0214  -0.9213  -0.0154  
+--------------------------------------------------
+
+================================================
+  Covariance Matrix
+        1           2           3           4   
+   3.432e-03  -3.198e-04  -2.860e-03  -1.726e-04
+  -3.198e-04   1.925e-04   9.968e-05  -3.529e-05
+  -2.860e-03   9.968e-05   9.039e-03   9.316e-05
+  -1.726e-04  -3.529e-05   9.316e-05   3.920e-04
+------------------------------------------------
+
+========================================================================
+Model TBabs<1>(vapec<2> + powerlaw<3> )   +   vapec<4>   +  gaussian<5>  +  gaussian<6> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   vapec      kT         keV      0.225000     frozen
+   3    2   vapec      He                  1.00000      frozen
+   4    2   vapec      C                   1.00000      frozen
+   5    2   vapec      N                   1.00000      frozen
+   6    2   vapec      O                   0.0          frozen
+   7    2   vapec      Ne                  1.00000      frozen
+   8    2   vapec      Mg                  1.00000      frozen
+   9    2   vapec      Al                  1.00000      frozen
+  10    2   vapec      Si                  1.00000      frozen
+  11    2   vapec      S                   1.00000      frozen
+  12    2   vapec      Ar                  1.00000      frozen
+  13    2   vapec      Ca                  1.00000      frozen
+  14    2   vapec      Fe                  1.00000      frozen
+  15    2   vapec      Ni                  1.00000      frozen
+  16    2   vapec      Redshift            0.0          frozen
+  17    2   vapec      norm                0.423782     +/-  5.85793E-02  
+  18    3   powerlaw   PhoIndex            1.52000      frozen
+  19    3   powerlaw   norm                0.378839     +/-  1.38741E-02  
+  20    4   vapec      kT         keV      9.90000E-02  frozen
+  21    4   vapec      He                  1.00000      frozen
+  22    4   vapec      C                   1.00000      frozen
+  23    4   vapec      N                   1.00000      frozen
+  24    4   vapec      O                   0.0          frozen
+  25    4   vapec      Ne                  1.00000      frozen
+  26    4   vapec      Mg                  1.00000      frozen
+  27    4   vapec      Al                  1.00000      frozen
+  28    4   vapec      Si                  1.00000      frozen
+  29    4   vapec      S                   1.00000      frozen
+  30    4   vapec      Ar                  1.00000      frozen
+  31    4   vapec      Ca                  1.00000      frozen
+  32    4   vapec      Fe                  1.00000      frozen
+  33    4   vapec      Ni                  1.00000      frozen
+  34    4   vapec      Redshift            0.0          frozen
+  35    4   vapec      norm                0.660996     +/-  9.50751E-02  
+  36    5   gaussian   LineE      keV      0.561000     frozen
+  37    5   gaussian   Sigma      keV      1.00000E-03  frozen
+  38    5   gaussian   norm                0.253550     +/-  1.97983E-02  
+  39    6   gaussian   LineE      keV      0.653000     frozen
+  40    6   gaussian   Sigma      keV      1.00000E-03  frozen
+  41    6   gaussian   norm                8.36716E-02  = 0.33*38
+________________________________________________________________________
+
+
+ C-Statistic =         977.99 using 968 PHA bins and 964 degrees of freedom.
+XSPEC12>error 17, 19, 35, 38
+ Parameter   Confidence Range (2.706)
+    17     0.329299     0.522773    (-0.094507,0.098967)
+    19     0.356444     0.402082    (-0.0223941,0.0232441)
+    35     0.506804     0.820288    (-0.154172,0.159312)
+    38     0.221764     0.286886    (-0.0317849,0.0333371)
+XSPEC12>
+
+
+
+; show model components
+; set larger characters, adjust viewport
+; remove title, file name, date
+; make ps file
+setplot add
+iplot
+csize 2
+viewport 0.15 0.15 0.9 0.9
+la top
+la file
+time off
+ls 1 on 3
+co 3 on 3
+ls 1 on 4
+co 4 on 4
+ls 1 on 5
+co 8 on 5
+ls 1 on 6
+co 2 on 6
+ls 1 on 7
+co 2 on 7
+plot
+hardcopy sim4_lines.ps/vcps
+
+
+
+
+

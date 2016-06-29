@@ -1,0 +1,23 @@
+statistic cstat
+method leven 10 0.01
+abund angr
+xsect bcmc
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  wabs(pow + gaussian)
+          0.018         -1          0          0     100000      1e+06
+          1.52
+          0.376
+          0.700         -1          0          0     100000      1e+06
+          0.050         -1          0          0     100000      1e+06
+          0.250         -0.01       0          0     100000      1e+06
+
+fakeit none & halo_rmf.fits & halo_arf.fits & y & pow & simcrab.fak & 10000.0
+
+cpd /xw
+setplot energy
+setplot rebin 3.0 12
+setplot add
+plot data
+

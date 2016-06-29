@@ -1,0 +1,4637 @@
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+tbvabs Version 1.0
+Cosmic absorption with grains and H2
+Wilms, Allen, & McCray 2000
+Questions: Adrienne Allen or Joern Wilms
+allenu@super.colorado.edu
+wilms@astro.uni-tuebingen.de
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+xsFakeit cmd string:
+fakeit 1 & halo_rmf.fits & halo_arf.fits & y & / & halo_rmf_1.fak & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : Chi-Squared =         591.70 using 984 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =         591.70 using 984 PHA bins.
+ Reduced chi-squared =        0.60316 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         972.92 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         591.70 using 984 PHA bins.
+ Reduced chi-squared =        0.60316 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+970.126      23.531       -3       1.49491      0.386369      0.222595
+970.121      1.65252      -4       1.49520      0.386692      0.223805
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2451E-04| -0.1629   0.9560   0.2442  
+ 2.4973E-03|  0.9044   0.2436  -0.3502  
+ 5.4312E-04|  0.3943  -0.1638   0.9043  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.131e-03   4.957e-04  -6.024e-04
+   4.957e-04   2.765e-04  -2.644e-04
+  -6.024e-04  -2.644e-04   7.579e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.49520      +/-  4.61581E-02  
+   3    2   powerlaw   norm                0.386692     +/-  1.66287E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.223805     +/-  2.75296E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         970.12 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         597.29 using 984 PHA bins.
+ Reduced chi-squared =        0.60885 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         970.12 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         597.29 using 984 PHA bins.
+ Reduced chi-squared =        0.60885 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         970.12 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         597.29 using 984 PHA bins.
+ Reduced chi-squared =        0.60885 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         970.12 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         597.29 using 984 PHA bins.
+ Reduced chi-squared =        0.60885 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        7886.12 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4257.88 using 984 PHA bins.
+ Reduced chi-squared =        4.35367 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         972.92 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         591.70 using 984 PHA bins.
+ Reduced chi-squared =        0.60501 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         972.92 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         591.70 using 984 PHA bins.
+ Reduced chi-squared =        0.60439 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         972.92 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         591.70 using 984 PHA bins.
+ Reduced chi-squared =        0.60377 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         972.92 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         591.70 using 984 PHA bins.
+ Reduced chi-squared =        0.60316 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =         980.03 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         573.68 using 984 PHA bins.
+ Reduced chi-squared =        0.58479 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         980.03 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         573.68 using 984 PHA bins.
+ Reduced chi-squared =        0.58479 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+976.361      17.1138      -3       1.58148      0.405708      0.206754
+976.345      2.61504      -4       1.57716      0.405678      0.208286
+976.345      0.0556332    -5       1.57751      0.405759      0.208185
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.3343E-04| -0.1463   0.9525   0.2672  
+ 2.4629E-03|  0.9018   0.2395  -0.3598  
+ 5.6596E-04|  0.4067  -0.1883   0.8939  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.099e-03   4.699e-04  -5.986e-04
+   4.699e-04   2.824e-04  -2.735e-04
+  -5.986e-04  -2.735e-04   7.807e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.57751      +/-  4.58175E-02  
+   3    2   powerlaw   norm                0.405759     +/-  1.68036E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.208185     +/-  2.79409E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         976.35 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         596.35 using 984 PHA bins.
+ Reduced chi-squared =        0.60790 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         976.35 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         596.35 using 984 PHA bins.
+ Reduced chi-squared =        0.60790 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         976.35 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         596.35 using 984 PHA bins.
+ Reduced chi-squared =        0.60790 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         976.35 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         596.35 using 984 PHA bins.
+ Reduced chi-squared =        0.60790 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8161.41 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4433.21 using 984 PHA bins.
+ Reduced chi-squared =        4.53294 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         980.03 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         573.68 using 984 PHA bins.
+ Reduced chi-squared =        0.58658 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         980.03 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         573.68 using 984 PHA bins.
+ Reduced chi-squared =        0.58599 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         980.03 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         573.68 using 984 PHA bins.
+ Reduced chi-squared =        0.58539 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         980.03 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         573.68 using 984 PHA bins.
+ Reduced chi-squared =        0.58479 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =         993.85 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.53 using 984 PHA bins.
+ Reduced chi-squared =        0.61319 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         993.85 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.53 using 984 PHA bins.
+ Reduced chi-squared =        0.61319 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+992.282      9.66888      -3       1.47865      0.376475      0.258776
+992.281      0.597261     -4       1.47717      0.376361      0.259002
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2284E-04| -0.1701   0.9597   0.2238  
+ 2.4330E-03|  0.9004   0.2436  -0.3606  
+ 5.6382E-04|  0.4005  -0.1401   0.9055  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.066e-03   4.819e-04  -5.900e-04
+   4.819e-04   2.686e-04  -2.589e-04
+  -5.900e-04  -2.589e-04   7.847e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.47717      +/-  4.54571E-02  
+   3    2   powerlaw   norm                0.376361     +/-  1.63888E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.259002     +/-  2.80131E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         992.28 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         609.86 using 984 PHA bins.
+ Reduced chi-squared =        0.62167 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         992.28 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         609.86 using 984 PHA bins.
+ Reduced chi-squared =        0.62167 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         992.28 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         609.86 using 984 PHA bins.
+ Reduced chi-squared =        0.62167 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         992.28 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         609.86 using 984 PHA bins.
+ Reduced chi-squared =        0.62167 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8225.39 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4350.65 using 984 PHA bins.
+ Reduced chi-squared =        4.44852 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         993.85 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.53 using 984 PHA bins.
+ Reduced chi-squared =        0.61507 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         993.85 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.53 using 984 PHA bins.
+ Reduced chi-squared =        0.61444 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         993.85 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.53 using 984 PHA bins.
+ Reduced chi-squared =        0.61381 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         993.85 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.53 using 984 PHA bins.
+ Reduced chi-squared =        0.61319 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1033.19 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         616.59 using 984 PHA bins.
+ Reduced chi-squared =        0.62853 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1033.19 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         616.59 using 984 PHA bins.
+ Reduced chi-squared =        0.62853 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1031.22      18.4802      -3       1.50002      0.358720      0.284180
+1031.21      1.51679      -4       1.49910      0.358845      0.285368
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2017E-04| -0.1606   0.9635   0.2143  
+ 2.4706E-03|  0.9121   0.2279  -0.3408  
+ 5.8041E-04|  0.3772  -0.1407   0.9154  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.141e-03   4.641e-04  -5.718e-04
+   4.641e-04   2.513e-04  -2.418e-04
+  -5.718e-04  -2.418e-04   7.789e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.49910      +/-  4.62709E-02  
+   3    2   powerlaw   norm                0.358845     +/-  1.58539E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.285368     +/-  2.79084E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1031.21 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.68 using 984 PHA bins.
+ Reduced chi-squared =        0.61333 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1031.21 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.68 using 984 PHA bins.
+ Reduced chi-squared =        0.61333 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1031.21 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.68 using 984 PHA bins.
+ Reduced chi-squared =        0.61333 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1031.21 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         601.68 using 984 PHA bins.
+ Reduced chi-squared =        0.61333 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8463.95 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4478.82 using 984 PHA bins.
+ Reduced chi-squared =        4.57957 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1033.19 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         616.59 using 984 PHA bins.
+ Reduced chi-squared =        0.63046 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1033.19 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         616.59 using 984 PHA bins.
+ Reduced chi-squared =        0.62982 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1033.19 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         616.59 using 984 PHA bins.
+ Reduced chi-squared =        0.62917 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1033.19 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         616.59 using 984 PHA bins.
+ Reduced chi-squared =        0.62853 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1020.72 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         619.71 using 984 PHA bins.
+ Reduced chi-squared =        0.63171 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1020.72 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         619.71 using 984 PHA bins.
+ Reduced chi-squared =        0.63171 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1018.95      9.15495      -3       1.48631      0.372172      0.281412
+1018.94      0.802082     -4       1.48963      0.373172      0.280614
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2319E-04| -0.1670   0.9619   0.2162  
+ 2.7035E-03|  0.9097   0.2349  -0.3423  
+ 5.8747E-04|  0.3801  -0.1395   0.9144  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.326e-03   5.268e-04  -6.422e-04
+   5.268e-04   2.746e-04  -2.667e-04
+  -6.422e-04  -2.667e-04   8.137e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.48963      +/-  4.82265E-02  
+   3    2   powerlaw   norm                0.373172     +/-  1.65715E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.280614     +/-  2.85256E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1018.94 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         625.31 using 984 PHA bins.
+ Reduced chi-squared =        0.63742 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1018.94 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         625.31 using 984 PHA bins.
+ Reduced chi-squared =        0.63742 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1018.94 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         625.31 using 984 PHA bins.
+ Reduced chi-squared =        0.63742 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1018.94 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         625.31 using 984 PHA bins.
+ Reduced chi-squared =        0.63742 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8211.61 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4427.54 using 984 PHA bins.
+ Reduced chi-squared =        4.52714 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1020.72 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         619.71 using 984 PHA bins.
+ Reduced chi-squared =        0.63365 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1020.72 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         619.71 using 984 PHA bins.
+ Reduced chi-squared =        0.63300 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1020.72 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         619.71 using 984 PHA bins.
+ Reduced chi-squared =        0.63235 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1020.72 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         619.71 using 984 PHA bins.
+ Reduced chi-squared =        0.63171 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =         992.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         645.20 using 984 PHA bins.
+ Reduced chi-squared =        0.65770 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         992.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         645.20 using 984 PHA bins.
+ Reduced chi-squared =        0.65770 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+987.371      13.513       -3       1.53315      0.365265      0.209745
+987.37       0.865133     -4       1.53261      0.365326      0.210385
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.1998E-04| -0.1442   0.9565   0.2535  
+ 2.6399E-03|  0.9146   0.2266  -0.3349  
+ 5.3884E-04|  0.3778  -0.1836   0.9075  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.288e-03   4.933e-04  -6.282e-04
+   4.933e-04   2.635e-04  -2.610e-04
+  -6.282e-04  -2.610e-04   7.475e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.53261      +/-  4.78293E-02  
+   3    2   powerlaw   norm                0.365326     +/-  1.62336E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.210385     +/-  2.73408E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         987.37 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         605.25 using 984 PHA bins.
+ Reduced chi-squared =        0.61697 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         987.37 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         605.25 using 984 PHA bins.
+ Reduced chi-squared =        0.61697 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         987.37 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         605.25 using 984 PHA bins.
+ Reduced chi-squared =        0.61697 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         987.37 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         605.25 using 984 PHA bins.
+ Reduced chi-squared =        0.61697 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        7780.66 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4442.42 using 984 PHA bins.
+ Reduced chi-squared =        4.54235 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         992.90 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         645.20 using 984 PHA bins.
+ Reduced chi-squared =        0.65971 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         992.90 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         645.20 using 984 PHA bins.
+ Reduced chi-squared =        0.65904 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         992.90 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         645.20 using 984 PHA bins.
+ Reduced chi-squared =        0.65837 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         992.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         645.20 using 984 PHA bins.
+ Reduced chi-squared =        0.65770 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1027.86 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         643.64 using 984 PHA bins.
+ Reduced chi-squared =        0.65611 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1027.86 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         643.64 using 984 PHA bins.
+ Reduced chi-squared =        0.65611 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1024.98      12.0409      -3       1.44101      0.355685      0.272128
+1024.97      2.02962      -4       1.44019      0.356386      0.271429
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.1549E-04| -0.1715   0.9627   0.2092  
+ 2.6139E-03|  0.9089   0.2366  -0.3435  
+ 5.6139E-04|  0.3802  -0.1313   0.9156  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.244e-03   5.150e-04  -6.248e-04
+   5.150e-04   2.630e-04  -2.566e-04
+  -6.248e-04  -2.566e-04   7.840e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.44019      +/-  4.73684E-02  
+   3    2   powerlaw   norm                0.356386     +/-  1.62181E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.271429     +/-  2.80003E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1024.97 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.42 using 984 PHA bins.
+ Reduced chi-squared =        0.63957 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1024.97 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.42 using 984 PHA bins.
+ Reduced chi-squared =        0.63957 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1024.97 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.42 using 984 PHA bins.
+ Reduced chi-squared =        0.63957 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1024.97 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.42 using 984 PHA bins.
+ Reduced chi-squared =        0.63957 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8072.19 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4326.92 using 984 PHA bins.
+ Reduced chi-squared =        4.42425 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1027.86 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         643.64 using 984 PHA bins.
+ Reduced chi-squared =        0.65812 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1027.86 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         643.64 using 984 PHA bins.
+ Reduced chi-squared =        0.65745 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1027.86 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         643.64 using 984 PHA bins.
+ Reduced chi-squared =        0.65678 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1027.86 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         643.64 using 984 PHA bins.
+ Reduced chi-squared =        0.65611 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1012.54 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         626.01 using 984 PHA bins.
+ Reduced chi-squared =        0.63814 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1012.54 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         626.01 using 984 PHA bins.
+ Reduced chi-squared =        0.63814 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1005.44      10.4487      -3       1.44414      0.337189      0.258979
+1005.44      1.84552      -4       1.44546      0.338263      0.257839
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.0997E-04| -0.1603   0.9646   0.2093  
+ 2.7008E-03|  0.9251   0.2208  -0.3090  
+ 5.3540E-04|  0.3443  -0.1441   0.9277  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.378e-03   5.081e-04  -6.047e-04
+   5.081e-04   2.451e-04  -2.336e-04
+  -6.047e-04  -2.336e-04   7.235e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.44546      +/-  4.87602E-02  
+   3    2   powerlaw   norm                0.338263     +/-  1.56560E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.257839     +/-  2.68983E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1005.44 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         568.32 using 984 PHA bins.
+ Reduced chi-squared =        0.57933 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1005.44 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         568.32 using 984 PHA bins.
+ Reduced chi-squared =        0.57933 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1005.44 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         568.32 using 984 PHA bins.
+ Reduced chi-squared =        0.57933 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1005.44 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         568.32 using 984 PHA bins.
+ Reduced chi-squared =        0.57933 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        7767.90 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4398.57 using 984 PHA bins.
+ Reduced chi-squared =        4.49752 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1012.54 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         626.01 using 984 PHA bins.
+ Reduced chi-squared =        0.64010 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1012.54 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         626.01 using 984 PHA bins.
+ Reduced chi-squared =        0.63944 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1012.54 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         626.01 using 984 PHA bins.
+ Reduced chi-squared =        0.63879 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1012.54 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         626.01 using 984 PHA bins.
+ Reduced chi-squared =        0.63814 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1012.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         695.14 using 984 PHA bins.
+ Reduced chi-squared =        0.70860 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1012.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         695.14 using 984 PHA bins.
+ Reduced chi-squared =        0.70860 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1011.13      9.01147      -3       1.49579      0.382944      0.251268
+1011.13      0.271637     -4       1.49515      0.382878      0.251490
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2530E-04| -0.1668   0.9583   0.2319  
+ 2.4032E-03|  0.8981   0.2447  -0.3654  
+ 5.7025E-04|  0.4070  -0.1473   0.9015  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.036e-03   4.740e-04  -5.844e-04
+   4.740e-04   2.714e-04  -2.628e-04
+  -5.844e-04  -2.628e-04   7.911e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.49515      +/-  4.51249E-02  
+   3    2   powerlaw   norm                0.382878     +/-  1.64742E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.251490     +/-  2.81269E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1011.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         711.25 using 984 PHA bins.
+ Reduced chi-squared =        0.72503 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1011.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         711.25 using 984 PHA bins.
+ Reduced chi-squared =        0.72503 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1011.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         711.25 using 984 PHA bins.
+ Reduced chi-squared =        0.72503 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1011.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         711.25 using 984 PHA bins.
+ Reduced chi-squared =        0.72503 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8268.88 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4372.80 using 984 PHA bins.
+ Reduced chi-squared =        4.47117 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1012.45 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         695.14 using 984 PHA bins.
+ Reduced chi-squared =        0.71077 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1012.45 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         695.14 using 984 PHA bins.
+ Reduced chi-squared =        0.71005 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1012.45 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         695.14 using 984 PHA bins.
+ Reduced chi-squared =        0.70932 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1012.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         695.14 using 984 PHA bins.
+ Reduced chi-squared =        0.70860 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1046.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         646.14 using 984 PHA bins.
+ Reduced chi-squared =        0.65865 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1046.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         646.14 using 984 PHA bins.
+ Reduced chi-squared =        0.65865 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1040.9       21.3575      -3       1.57419      0.395703      0.273926
+1040.9       1.23095      -4       1.57551      0.396443      0.273839
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.3430E-04| -0.1555   0.9587   0.2383  
+ 2.3518E-03|  0.8887   0.2411  -0.3899  
+ 6.1560E-04|  0.4313  -0.1512   0.8895  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   1.975e-03   4.438e-04  -5.838e-04
+   4.438e-04   2.742e-04  -2.732e-04
+  -5.838e-04  -2.732e-04   8.522e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.57551      +/-  4.44433E-02  
+   3    2   powerlaw   norm                0.396443     +/-  1.65591E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.273839     +/-  2.91931E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1040.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         680.31 using 984 PHA bins.
+ Reduced chi-squared =        0.69349 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1040.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         680.31 using 984 PHA bins.
+ Reduced chi-squared =        0.69349 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1040.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         680.31 using 984 PHA bins.
+ Reduced chi-squared =        0.69349 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1040.90 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         680.31 using 984 PHA bins.
+ Reduced chi-squared =        0.69349 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        9022.80 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4524.69 using 984 PHA bins.
+ Reduced chi-squared =        4.62647 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1046.78 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         646.14 using 984 PHA bins.
+ Reduced chi-squared =        0.66067 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1046.78 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         646.14 using 984 PHA bins.
+ Reduced chi-squared =        0.65999 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1046.78 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         646.14 using 984 PHA bins.
+ Reduced chi-squared =        0.65932 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1046.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         646.14 using 984 PHA bins.
+ Reduced chi-squared =        0.65865 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1003.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         641.94 using 984 PHA bins.
+ Reduced chi-squared =        0.65437 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1003.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         641.94 using 984 PHA bins.
+ Reduced chi-squared =        0.65437 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1002.7       3.11337      -3       1.53581      0.386602      0.244304
+1002.7       0.130866     -4       1.53572      0.386639      0.244299
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2812E-04| -0.1572   0.9577   0.2410  
+ 2.4734E-03|  0.9010   0.2390  -0.3619  
+ 5.7224E-04|  0.4042  -0.1603   0.9005  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.105e-03   4.763e-04  -6.032e-04
+   4.763e-04   2.735e-04  -2.670e-04
+  -6.032e-04  -2.670e-04   7.955e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.53572      +/-  4.58771E-02  
+   3    2   powerlaw   norm                0.386639     +/-  1.65382E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.244299     +/-  2.82046E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1002.70 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         657.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67043 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1002.70 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         657.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67043 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1002.70 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         657.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67043 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1002.70 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         657.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67043 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8391.36 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4384.32 using 984 PHA bins.
+ Reduced chi-squared =        4.48295 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1003.16 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         641.94 using 984 PHA bins.
+ Reduced chi-squared =        0.65638 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1003.16 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         641.94 using 984 PHA bins.
+ Reduced chi-squared =        0.65571 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1003.16 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         641.94 using 984 PHA bins.
+ Reduced chi-squared =        0.65504 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1003.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         641.94 using 984 PHA bins.
+ Reduced chi-squared =        0.65437 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =         976.84 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         633.25 using 984 PHA bins.
+ Reduced chi-squared =        0.64552 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         976.84 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         633.25 using 984 PHA bins.
+ Reduced chi-squared =        0.64552 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+966.217      40.2107      -3       1.47776      0.329813      0.312535
+966.152      6.97845      -4       1.47734      0.331267      0.316472
+966.152      0.0474029    -5       1.47734      0.331273      0.316513
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.1254E-04| -0.1573   0.9684   0.1934  
+ 2.7414E-03|  0.9262   0.2127  -0.3115  
+ 5.9090E-04|  0.3428  -0.1301   0.9304  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.424e-03   4.964e-04  -6.058e-04
+   4.964e-04   2.395e-04  -2.321e-04
+  -6.058e-04  -2.321e-04   7.817e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.47734      +/-  4.92312E-02  
+   3    2   powerlaw   norm                0.331273     +/-  1.54765E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.316513     +/-  2.79580E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         966.15 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         577.48 using 984 PHA bins.
+ Reduced chi-squared =        0.58867 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         966.15 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         577.48 using 984 PHA bins.
+ Reduced chi-squared =        0.58867 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         966.15 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         577.48 using 984 PHA bins.
+ Reduced chi-squared =        0.58867 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         966.15 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         577.48 using 984 PHA bins.
+ Reduced chi-squared =        0.58867 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8295.27 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4528.93 using 984 PHA bins.
+ Reduced chi-squared =        4.63081 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         976.84 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         633.25 using 984 PHA bins.
+ Reduced chi-squared =        0.64750 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         976.84 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         633.25 using 984 PHA bins.
+ Reduced chi-squared =        0.64684 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         976.84 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         633.25 using 984 PHA bins.
+ Reduced chi-squared =        0.64618 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         976.84 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         633.25 using 984 PHA bins.
+ Reduced chi-squared =        0.64552 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1030.04 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         630.39 using 984 PHA bins.
+ Reduced chi-squared =        0.64260 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1030.04 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         630.39 using 984 PHA bins.
+ Reduced chi-squared =        0.64260 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1025.88      22.31        -3       1.44837      0.360001      0.239094
+1025.88      1.75529      -4       1.44804      0.360564      0.239152
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.1561E-04| -0.1670   0.9601   0.2242  
+ 2.6572E-03|  0.9098   0.2377  -0.3402  
+ 5.3421E-04|  0.3800  -0.1471   0.9132  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.280e-03   5.262e-04  -6.415e-04
+   5.262e-04   2.683e-04  -2.618e-04
+  -6.415e-04  -2.618e-04   7.589e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.44804      +/-  4.77470E-02  
+   3    2   powerlaw   norm                0.360564     +/-  1.63790E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.239152     +/-  2.75489E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1025.88 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         608.82 using 984 PHA bins.
+ Reduced chi-squared =        0.62061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1025.88 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         608.82 using 984 PHA bins.
+ Reduced chi-squared =        0.62061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1025.88 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         608.82 using 984 PHA bins.
+ Reduced chi-squared =        0.62061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1025.88 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         608.82 using 984 PHA bins.
+ Reduced chi-squared =        0.62061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        7828.13 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4329.57 using 984 PHA bins.
+ Reduced chi-squared =        4.42696 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1030.04 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         630.39 using 984 PHA bins.
+ Reduced chi-squared =        0.64457 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1030.04 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         630.39 using 984 PHA bins.
+ Reduced chi-squared =        0.64392 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1030.04 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         630.39 using 984 PHA bins.
+ Reduced chi-squared =        0.64326 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1030.04 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         630.39 using 984 PHA bins.
+ Reduced chi-squared =        0.64260 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1029.26 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         602.39 using 984 PHA bins.
+ Reduced chi-squared =        0.61406 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1029.26 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         602.39 using 984 PHA bins.
+ Reduced chi-squared =        0.61406 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1027.41      11.3071      -3       1.55130      0.388048      0.261736
+1027.41      0.417241     -4       1.55268      0.388505      0.261375
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.3034E-04| -0.1569   0.9585   0.2383  
+ 2.3646E-03|  0.8922   0.2410  -0.3819  
+ 5.9737E-04|  0.4235  -0.1527   0.8930  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   1.993e-03   4.502e-04  -5.848e-04
+   4.502e-04   2.710e-04  -2.693e-04
+  -5.848e-04  -2.693e-04   8.287e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.55268      +/-  4.46401E-02  
+   3    2   powerlaw   norm                0.388505     +/-  1.64607E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.261375     +/-  2.87864E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1027.41 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         620.52 using 984 PHA bins.
+ Reduced chi-squared =        0.63253 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1027.41 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         620.52 using 984 PHA bins.
+ Reduced chi-squared =        0.63253 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1027.41 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         620.52 using 984 PHA bins.
+ Reduced chi-squared =        0.63253 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1027.41 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         620.52 using 984 PHA bins.
+ Reduced chi-squared =        0.63253 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8733.35 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4475.74 using 984 PHA bins.
+ Reduced chi-squared =        4.57642 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1029.26 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         602.39 using 984 PHA bins.
+ Reduced chi-squared =        0.61594 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1029.26 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         602.39 using 984 PHA bins.
+ Reduced chi-squared =        0.61531 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1029.26 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         602.39 using 984 PHA bins.
+ Reduced chi-squared =        0.61468 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1029.26 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         602.39 using 984 PHA bins.
+ Reduced chi-squared =        0.61406 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1018.56 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         582.18 using 984 PHA bins.
+ Reduced chi-squared =        0.59346 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1018.56 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         582.18 using 984 PHA bins.
+ Reduced chi-squared =        0.59346 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1014.11      17.0234      -3       1.44229      0.373296      0.266530
+1014.1       1.63953      -4       1.44467      0.374639      0.265132
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2023E-04| -0.1768   0.9602   0.2162  
+ 2.5982E-03|  0.9007   0.2464  -0.3579  
+ 5.7192E-04|  0.3969  -0.1314   0.9084  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.201e-03   5.264e-04  -6.359e-04
+   5.264e-04   2.785e-04  -2.725e-04
+  -6.359e-04  -2.725e-04   8.104e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.44467      +/-  4.69200E-02  
+   3    2   powerlaw   norm                0.374639     +/-  1.66885E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.265132     +/-  2.84668E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1014.10 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         592.22 using 984 PHA bins.
+ Reduced chi-squared =        0.60369 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1014.10 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         592.22 using 984 PHA bins.
+ Reduced chi-squared =        0.60369 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1014.10 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         592.22 using 984 PHA bins.
+ Reduced chi-squared =        0.60369 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1014.10 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         592.22 using 984 PHA bins.
+ Reduced chi-squared =        0.60369 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8002.73 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4291.49 using 984 PHA bins.
+ Reduced chi-squared =        4.38803 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1018.56 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         582.18 using 984 PHA bins.
+ Reduced chi-squared =        0.59528 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1018.56 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         582.18 using 984 PHA bins.
+ Reduced chi-squared =        0.59467 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1018.56 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         582.18 using 984 PHA bins.
+ Reduced chi-squared =        0.59406 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1018.56 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         582.18 using 984 PHA bins.
+ Reduced chi-squared =        0.59346 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1041.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         636.57 using 984 PHA bins.
+ Reduced chi-squared =        0.64890 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1041.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         636.57 using 984 PHA bins.
+ Reduced chi-squared =        0.64890 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1039.99      7.31056      -3       1.50365      0.384623      0.250516
+1039.99      0.14702      -4       1.50400      0.384746      0.250470
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2622E-04| -0.1650   0.9579   0.2349  
+ 2.5755E-03|  0.8962   0.2451  -0.3698  
+ 5.7814E-04|  0.4118  -0.1495   0.8989  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.170e-03   5.101e-04  -6.444e-04
+   5.101e-04   2.834e-04  -2.827e-04
+  -6.444e-04  -2.827e-04   8.264e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.50400      +/-  4.65840E-02  
+   3    2   powerlaw   norm                0.384746     +/-  1.68347E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.250470     +/-  2.87463E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1039.99 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.80 using 984 PHA bins.
+ Reduced chi-squared =        0.66544 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1039.99 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.80 using 984 PHA bins.
+ Reduced chi-squared =        0.66544 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1039.99 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.80 using 984 PHA bins.
+ Reduced chi-squared =        0.66544 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1039.99 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.80 using 984 PHA bins.
+ Reduced chi-squared =        0.66544 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8271.89 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4379.29 using 984 PHA bins.
+ Reduced chi-squared =        4.47780 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1041.13 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         636.57 using 984 PHA bins.
+ Reduced chi-squared =        0.65089 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1041.13 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         636.57 using 984 PHA bins.
+ Reduced chi-squared =        0.65023 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1041.13 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         636.57 using 984 PHA bins.
+ Reduced chi-squared =        0.64957 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1041.13 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         636.57 using 984 PHA bins.
+ Reduced chi-squared =        0.64890 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1016.51 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         622.51 using 984 PHA bins.
+ Reduced chi-squared =        0.63456 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1016.51 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         622.51 using 984 PHA bins.
+ Reduced chi-squared =        0.63456 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1009.18      29.0347      -3       1.41959      0.371316      0.252773
+1009.16      3.12782      -4       1.42298      0.373388      0.251417
+1009.16      0.0329494    -5       1.42283      0.373360      0.251453
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.1856E-04| -0.1796   0.9593   0.2181  
+ 2.6296E-03|  0.9026   0.2488  -0.3513  
+ 5.4977E-04|  0.3912  -0.1337   0.9105  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.230e-03   5.413e-04  -6.425e-04
+   5.413e-04   2.817e-04  -2.720e-04
+  -6.425e-04  -2.720e-04   7.859e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.42283      +/-  4.72261E-02  
+   3    2   powerlaw   norm                0.373360     +/-  1.67839E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.251453     +/-  2.80335E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1009.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.16 using 984 PHA bins.
+ Reduced chi-squared =        0.63931 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1009.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.16 using 984 PHA bins.
+ Reduced chi-squared =        0.63931 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1009.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.16 using 984 PHA bins.
+ Reduced chi-squared =        0.63931 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1009.16 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         627.16 using 984 PHA bins.
+ Reduced chi-squared =        0.63931 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        7810.82 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4223.86 using 984 PHA bins.
+ Reduced chi-squared =        4.31887 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1016.51 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         622.51 using 984 PHA bins.
+ Reduced chi-squared =        0.63651 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1016.51 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         622.51 using 984 PHA bins.
+ Reduced chi-squared =        0.63586 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1016.51 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         622.51 using 984 PHA bins.
+ Reduced chi-squared =        0.63521 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1016.51 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         622.51 using 984 PHA bins.
+ Reduced chi-squared =        0.63456 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =         957.63 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         563.74 using 984 PHA bins.
+ Reduced chi-squared =        0.57466 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         957.63 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         563.74 using 984 PHA bins.
+ Reduced chi-squared =        0.57466 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+955.893      8.73244      -3       1.53978      0.374679      0.222335
+955.892      0.495519     -4       1.54031      0.374948      0.222334
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2369E-04| -0.1488   0.9569   0.2493  
+ 2.4863E-03|  0.9068   0.2326  -0.3516  
+ 5.4849E-04|  0.3945  -0.1737   0.9023  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.132e-03   4.692e-04  -6.022e-04
+   4.692e-04   2.643e-04  -2.598e-04
+  -6.022e-04  -2.598e-04   7.617e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.54031      +/-  4.61783E-02  
+   3    2   powerlaw   norm                0.374948     +/-  1.62586E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.222334     +/-  2.75993E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         955.89 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         550.04 using 984 PHA bins.
+ Reduced chi-squared =        0.56069 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         955.89 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         550.04 using 984 PHA bins.
+ Reduced chi-squared =        0.56069 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         955.89 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         550.04 using 984 PHA bins.
+ Reduced chi-squared =        0.56069 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         955.89 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         550.04 using 984 PHA bins.
+ Reduced chi-squared =        0.56069 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8132.68 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4408.31 using 984 PHA bins.
+ Reduced chi-squared =        4.50747 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         957.63 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         563.74 using 984 PHA bins.
+ Reduced chi-squared =        0.57642 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         957.63 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         563.74 using 984 PHA bins.
+ Reduced chi-squared =        0.57583 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         957.63 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         563.74 using 984 PHA bins.
+ Reduced chi-squared =        0.57525 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         957.63 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         563.74 using 984 PHA bins.
+ Reduced chi-squared =        0.57466 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1093.06 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         750.86 using 984 PHA bins.
+ Reduced chi-squared =        0.76541 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1093.06 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         750.86 using 984 PHA bins.
+ Reduced chi-squared =        0.76541 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1091.8       8.43871      -3       1.48372      0.357546      0.270056
+1091.8       0.748222     -4       1.48366      0.357802      0.270102
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.1846E-04| -0.1618   0.9624   0.2181  
+ 2.5935E-03|  0.9112   0.2306  -0.3414  
+ 5.7221E-04|  0.3789  -0.1435   0.9143  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.239e-03   4.953e-04  -6.128e-04
+   4.953e-04   2.594e-04  -2.544e-04
+  -6.128e-04  -2.544e-04   7.862e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.48366      +/-  4.73132E-02  
+   3    2   powerlaw   norm                0.357802     +/-  1.61052E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.270102     +/-  2.80396E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1091.80 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         726.12 using 984 PHA bins.
+ Reduced chi-squared =        0.74019 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1091.80 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         726.12 using 984 PHA bins.
+ Reduced chi-squared =        0.74019 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1091.80 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         726.12 using 984 PHA bins.
+ Reduced chi-squared =        0.74019 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1091.80 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         726.12 using 984 PHA bins.
+ Reduced chi-squared =        0.74019 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8230.49 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4486.00 using 984 PHA bins.
+ Reduced chi-squared =        4.58691 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1093.06 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         750.86 using 984 PHA bins.
+ Reduced chi-squared =        0.76775 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1093.06 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         750.86 using 984 PHA bins.
+ Reduced chi-squared =        0.76697 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1093.06 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         750.86 using 984 PHA bins.
+ Reduced chi-squared =        0.76619 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1093.06 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         750.86 using 984 PHA bins.
+ Reduced chi-squared =        0.76541 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1006.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         599.01 using 984 PHA bins.
+ Reduced chi-squared =        0.61061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1006.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         599.01 using 984 PHA bins.
+ Reduced chi-squared =        0.61061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1003.61      17.7012      -3       1.47721      0.384169      0.245397
+1003.61      0.862006     -4       1.47751      0.384502      0.245606
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2423E-04| -0.1706   0.9578   0.2315  
+ 2.5229E-03|  0.8978   0.2479  -0.3641  
+ 5.6171E-04|  0.4061  -0.1458   0.9021  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.130e-03   5.079e-04  -6.238e-04
+   5.079e-04   2.809e-04  -2.740e-04
+  -6.238e-04  -2.740e-04   7.982e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.47751      +/-  4.61492E-02  
+   3    2   powerlaw   norm                0.384502     +/-  1.67606E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.245606     +/-  2.82526E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1003.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         613.70 using 984 PHA bins.
+ Reduced chi-squared =        0.62559 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1003.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         613.70 using 984 PHA bins.
+ Reduced chi-squared =        0.62559 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1003.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         613.70 using 984 PHA bins.
+ Reduced chi-squared =        0.62559 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1003.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         613.70 using 984 PHA bins.
+ Reduced chi-squared =        0.62559 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8104.01 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4291.33 using 984 PHA bins.
+ Reduced chi-squared =        4.38787 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1006.61 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         599.01 using 984 PHA bins.
+ Reduced chi-squared =        0.61249 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1006.61 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         599.01 using 984 PHA bins.
+ Reduced chi-squared =        0.61186 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1006.61 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         599.01 using 984 PHA bins.
+ Reduced chi-squared =        0.61124 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1006.61 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         599.01 using 984 PHA bins.
+ Reduced chi-squared =        0.61061 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1005.32 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         632.54 using 984 PHA bins.
+ Reduced chi-squared =        0.64479 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1005.32 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         632.54 using 984 PHA bins.
+ Reduced chi-squared =        0.64479 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1001.1       17.1647      -3       1.45218      0.376361      0.261691
+1001.09      1.60527      -4       1.44941      0.376342      0.262010
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2137E-04| -0.1767   0.9595   0.2195  
+ 2.4055E-03|  0.8969   0.2488  -0.3655  
+ 5.6686E-04|  0.4053  -0.1323   0.9046  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.032e-03   4.858e-04  -5.855e-04
+   4.858e-04   2.705e-04  -2.610e-04
+  -5.855e-04  -2.610e-04   7.910e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.44941      +/-  4.50793E-02  
+   3    2   powerlaw   norm                0.376342     +/-  1.64475E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.262010     +/-  2.81253E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1001.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         642.23 using 984 PHA bins.
+ Reduced chi-squared =        0.65467 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1001.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         642.23 using 984 PHA bins.
+ Reduced chi-squared =        0.65467 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1001.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         642.23 using 984 PHA bins.
+ Reduced chi-squared =        0.65467 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1001.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         642.23 using 984 PHA bins.
+ Reduced chi-squared =        0.65467 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8135.10 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4237.13 using 984 PHA bins.
+ Reduced chi-squared =        4.33245 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1005.32 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         632.54 using 984 PHA bins.
+ Reduced chi-squared =        0.64677 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1005.32 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         632.54 using 984 PHA bins.
+ Reduced chi-squared =        0.64611 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1005.32 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         632.54 using 984 PHA bins.
+ Reduced chi-squared =        0.64545 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1005.32 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         632.54 using 984 PHA bins.
+ Reduced chi-squared =        0.64479 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1004.85 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         659.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67246 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1004.85 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         659.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67246 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1004.45      6.50728      -3       1.52535      0.376762      0.234609
+1004.45      0.192533     -4       1.52520      0.376774      0.234755
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2430E-04| -0.1544   0.9578   0.2424  
+ 2.5836E-03|  0.9061   0.2351  -0.3517  
+ 5.6031E-04|  0.3938  -0.1653   0.9042  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.211e-03   4.956e-04  -6.284e-04
+   4.956e-04   2.722e-04  -2.685e-04
+  -6.284e-04  -2.685e-04   7.849e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.52520      +/-  4.70227E-02  
+   3    2   powerlaw   norm                0.376774     +/-  1.64978E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.234755     +/-  2.80163E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1004.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.23 using 984 PHA bins.
+ Reduced chi-squared =        0.66486 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1004.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.23 using 984 PHA bins.
+ Reduced chi-squared =        0.66486 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1004.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.23 using 984 PHA bins.
+ Reduced chi-squared =        0.66486 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1004.45 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         652.23 using 984 PHA bins.
+ Reduced chi-squared =        0.66486 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8142.08 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4398.24 using 984 PHA bins.
+ Reduced chi-squared =        4.49717 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1004.85 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         659.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67453 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1004.85 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         659.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67384 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1004.85 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         659.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67315 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1004.85 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         659.69 using 984 PHA bins.
+ Reduced chi-squared =        0.67246 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1025.91 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         606.06 using 984 PHA bins.
+ Reduced chi-squared =        0.61780 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1025.91 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         606.06 using 984 PHA bins.
+ Reduced chi-squared =        0.61780 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1025.09      3.27019      -3       1.53857      0.389574      0.244981
+1025.09      0.224084     -4       1.53771      0.389451      0.245182
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2922E-04| -0.1569   0.9570   0.2440  
+ 2.5289E-03|  0.8989   0.2407  -0.3662  
+ 5.8893E-04|  0.4092  -0.1618   0.8980  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.145e-03   4.888e-04  -6.209e-04
+   4.888e-04   2.803e-04  -2.783e-04
+  -6.209e-04  -2.783e-04   8.217e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.53771      +/-  4.63147E-02  
+   3    2   powerlaw   norm                0.389451     +/-  1.67423E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.245182     +/-  2.86653E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1025.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         623.10 using 984 PHA bins.
+ Reduced chi-squared =        0.63517 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =        1025.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         623.10 using 984 PHA bins.
+ Reduced chi-squared =        0.63517 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1025.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         623.10 using 984 PHA bins.
+ Reduced chi-squared =        0.63517 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =        1025.09 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         623.10 using 984 PHA bins.
+ Reduced chi-squared =        0.63517 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8262.40 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4484.51 using 984 PHA bins.
+ Reduced chi-squared =        4.58539 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1025.91 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         606.06 using 984 PHA bins.
+ Reduced chi-squared =        0.61969 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        1025.91 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         606.06 using 984 PHA bins.
+ Reduced chi-squared =        0.61906 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1025.91 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         606.06 using 984 PHA bins.
+ Reduced chi-squared =        0.61843 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =        1025.91 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         606.06 using 984 PHA bins.
+ Reduced chi-squared =        0.61780 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =         918.92 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         539.87 using 984 PHA bins.
+ Reduced chi-squared =        0.55032 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =         918.92 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         539.87 using 984 PHA bins.
+ Reduced chi-squared =        0.55032 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+918.784      5.07362      -3       1.51612      0.372602      0.259746
+918.784      0.119472     -4       1.51657      0.372717      0.259708
+========================================
+ Variances and Principal Axes
+                 2        3        6  
+ 1.2398E-04| -0.1575   0.9606   0.2289  
+ 2.7735E-03|  0.9142   0.2295  -0.3341  
+ 5.7519E-04|  0.3735  -0.1567   0.9143  
+----------------------------------------
+
+====================================
+  Covariance Matrix
+        1           2           3   
+   2.401e-03   5.295e-04  -6.551e-04
+   5.295e-04   2.746e-04  -2.678e-04
+  -6.551e-04  -2.678e-04   7.969e-04
+------------------------------------
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  frozen
+   2    2   powerlaw   PhoIndex            1.51657      +/-  4.90014E-02  
+   3    2   powerlaw   norm                0.372717     +/-  1.65715E-02  
+   4    3   gaussian   LineE      keV      0.700000     frozen
+   5    3   gaussian   Sigma      keV      0.100000     frozen
+   6    3   gaussian   norm                0.259708     +/-  2.82294E-02  
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         918.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         538.51 using 984 PHA bins.
+ Reduced chi-squared =        0.54894 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : C-Statistic =         918.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         538.51 using 984 PHA bins.
+ Reduced chi-squared =        0.54894 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         918.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         538.51 using 984 PHA bins.
+ Reduced chi-squared =        0.54894 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : C-Statistic =         918.78 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         538.51 using 984 PHA bins.
+ Reduced chi-squared =        0.54894 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.00000      +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000      +/-  0.0          
+   4    3   gaussian   LineE      keV      6.50000      +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =        8026.66 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =        4326.28 using 984 PHA bins.
+ Reduced chi-squared =        4.42360 for    978 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         918.92 using 984 PHA bins and 978 degrees of freedom.
+
+Test statistic : Chi-Squared =         539.87 using 984 PHA bins.
+ Reduced chi-squared =        0.55201 for    978 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+========================================================================
+Model TBabs<1>(powerlaw<2> + gaussian<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    1.80000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            1.52000      +/-  0.0          
+   3    2   powerlaw   norm                0.376000     +/-  0.0          
+   4    3   gaussian   LineE      keV      0.700000     +/-  0.0          
+   5    3   gaussian   Sigma      keV      0.100000     +/-  0.0          
+   6    3   gaussian   norm                0.250000     +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : C-Statistic =         918.92 using 984 PHA bins and 979 degrees of freedom.
+
+Test statistic : Chi-Squared =         539.87 using 984 PHA bins.
+ Reduced chi-squared =        0.55145 for    979 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         918.92 using 984 PHA bins and 980 degrees of freedom.
+
+Test statistic : Chi-Squared =         539.87 using 984 PHA bins.
+ Reduced chi-squared =        0.55088 for    980 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+Fit statistic : C-Statistic =         918.92 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         539.87 using 984 PHA bins.
+ Reduced chi-squared =        0.55032 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+xsFakeit cmd string:
+fakeit & y & / & / & 10000.0, ,  
+
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : C-Statistic =        1046.18 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         625.61 using 984 PHA bins.
+ Reduced chi-squared =        0.63772 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+Default fit statistic is set to: C-Statistic
+   This will apply to all current and newly loaded spectra.
+
+Fit statistic : C-Statistic =        1046.18 using 984 PHA bins and 981 degrees of freedom.
+
+Test statistic : Chi-Squared =         625.61 using 984 PHA bins.
+ Reduced chi-squared =        0.63772 for    981 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+                                   Parameters
+C-Statistic  |beta|/N    Lvl    2:PhoIndex        3:norm        6:norm
+1041.48      19.6705      -3       1.47571      0.389509      0.246128
+1041.48      1.1119       -4       1.47418      0.389449      0.246988
