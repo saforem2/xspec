@@ -9,95 +9,95 @@ from simcrab import fitCrab
 from xspec import *
 import os
 
-# read in the transmission data
-ener, c2, c1 = transpose(genfromtxt('C1C2eff.dat'))
-# remove points below ethreshold
-ethreshold = 0.1 # keV
-q = where(ener >= ethreshold)
-ener = ener[q]
-c1 = c1[q]
-c2 = c2[q]
-# replace with evenly spaced energies
-t = max(ener)+ener[1]-ener[0]
-ener = arange(min(ener), t, (t-min(ener))/len(ener))
-# should add silicon dead layer
-area = 0.25 # detector area in cm^2
-
-plt.ion() # do plots in interactive mode
-# plot the spectrum
-fig1 = plt.figure(1)
-plt.clf()
-plt.xlabel('Energy (keV)')
-plt.ylabel('Response (cm^2)')
-# plt.xscale('log')
-plt.plot(ener, area*c1 , '-b')
-plt.plot(ener, area*c2 , '-r')
-#plt.show() # display the plot
-plt.savefig('effective_area_energy.pdf',format='pdf')
-
-# translate into energy bin lower and upper bounds and average response
-n = len(ener)
-emin = float32(ener[0:n-1])
-emax = float32(ener[1:n])
-resp = float32(area*0.5*(c1[0:n-1]+c1[1:n]))
-fig2 = plt.figure()
-plt.plot(0.5*(emin+emax), resp, '-k')
-#plt.show()
-plt.savefig('e_min_e_max_response.pdf',format='pdf')
-
-
-# make .arf file
-# create FITS table with ARF data
-col1 = pyfits.Column(name='E_MIN', format='1E', unit='keV', array=emin)
-col2 = pyfits.Column(name='E_MAX', format='1E', unit='keV', array=emax)
-col3 = pyfits.Column(name='SPECRESP', format='1E', unit='cm**2', array=resp)
-# create a ColDefs (column-definitions) object for all columns:
-cols = pyfits.ColDefs([col1, col2, col3])
-# create a new binary table HDU object
-arfhdu = pyfits.new_table(cols)
-arfhdu.header.update('EXTNAME', 'SPECRESP', 'Extension type')
-arfhdu.header.update('TELESCOP', 'HaloSat', 'Mission name')
-arfhdu.header.update('INSTRUME', 'SDD1', 'Instrument')
-#arfhdu.header.update('CHANTYPE', 'PHA', 'Channels from detector electronics')
-#arfhdu.header.update('DETCHANS', len(emin), 'total number of raw detector PHA channels')
-arfhdu.header.update('HDUCLASS', 'OGIP', 'file format is OGIP standard')
-arfhdu.header.update('HDUCLAS1', 'RESPONSE', 'extension contains response data')
-arfhdu.header.update('HDUCLAS2', 'SPECRESP', 'extension contains a response matrix')
-arfhdu.header.update('HDUVERS', '1.1.0', 'version of the file format')
-# create primary FITS header
-prihdr = pyfits.Header()
-prihdu = pyfits.PrimaryHDU(header=prihdr)
-# create HDUList with primary HDU and the data table extension
-thdulist = pyfits.HDUList([prihdu, arfhdu])
-# write to file
-thdulist.writeto('halo_arf.fits', clobber=True)
-
-# make .rmf file
-# create EBOUNDS extension
-chan = arange(0, len(emin), dtype='int16')
-col1 = pyfits.Column(name='CHANNEL', format='I', array=chan)
-col2 = pyfits.Column(name='E_MIN', format='1E', array=emin)
-col3 = pyfits.Column(name='E_MAX', format='1E', array=emax)
-# create a ColDefs (column-definitions) object for all columns:
-cols = pyfits.ColDefs([col1, col2, col3])
-# create a new binary table HDU object
-eboundshdu = pyfits.new_table(cols)
-eboundshdu.name = 'EBOUNDS'
-eboundshdu.header.update('EXTNAME', 'EBOUNDS', 'Extension type')
-eboundshdu.header.update('TELESCOP', 'HaloSat', 'Mission name')
-eboundshdu.header.update('INSTRUME', 'SDD1', 'Instrument')
-eboundshdu.header.update('CHANTYPE', 'PHA', 'Channels from detector electronics')
-eboundshdu.header.update('DETCHANS', len(emin), 'total number of raw detector PHA channels')
-eboundshdu.header.update('HDUCLASS', 'OGIP', 'file format is OGIP standard')
-eboundshdu.header.update('HDUCLAS1', 'RESPONSE', 'extension contains response data')
-eboundshdu.header.update('HDUCLAS2', 'EBOUNDS', 'extension contains a response matrix')
-eboundshdu.header.update('HDUVERS', '1.3.0', 'version of the file format')
 
 # create MATRIX extension
 
 # createMatrix returns the total counts with error bounds
 # for a given energy resolution, e_res
 def createMatrix(e_res):
+    # read in the transmission data
+    ener, c2, c1 = transpose(genfromtxt('C1C2eff.dat'))
+    # remove points below ethreshold
+    ethreshold = 0.1 # keV
+    q = where(ener >= ethreshold)
+    ener = ener[q]
+    c1 = c1[q]
+    c2 = c2[q]
+    # replace with evenly spaced energies
+    t = max(ener)+ener[1]-ener[0]
+    ener = arange(min(ener), t, (t-min(ener))/len(ener))
+    # should add silicon dead layer
+    area = 0.25 # detector area in cm^2
+
+    plt.ion() # do plots in interactive mode
+    # plot the spectrum
+    fig1 = plt.figure(1)
+    plt.clf()
+    plt.xlabel('Energy (keV)')
+    plt.ylabel('Response (cm^2)')
+    # plt.xscale('log')
+    plt.plot(ener, area*c1 , '-b')
+    plt.plot(ener, area*c2 , '-r')
+    #plt.show() # display the plot
+    plt.savefig('effective_area_energy.pdf',format='pdf')
+
+    # translate into energy bin lower and upper bounds and average response
+    n = len(ener)
+    emin = float32(ener[0:n-1])
+    emax = float32(ener[1:n])
+    resp = float32(area*0.5*(c1[0:n-1]+c1[1:n]))
+    fig2 = plt.figure()
+    plt.plot(0.5*(emin+emax), resp, '-k')
+    #plt.show()
+    plt.savefig('e_min_e_max_response.pdf',format='pdf')
+
+
+    # make .arf file
+    # create FITS table with ARF data
+    col1 = pyfits.Column(name='E_MIN', format='1E', unit='keV', array=emin)
+    col2 = pyfits.Column(name='E_MAX', format='1E', unit='keV', array=emax)
+    col3 = pyfits.Column(name='SPECRESP', format='1E', unit='cm**2', array=resp)
+    # create a ColDefs (column-definitions) object for all columns:
+    cols = pyfits.ColDefs([col1, col2, col3])
+    # create a new binary table HDU object
+    arfhdu = pyfits.new_table(cols)
+    arfhdu.header.update('EXTNAME', 'SPECRESP', 'Extension type')
+    arfhdu.header.update('TELESCOP', 'HaloSat', 'Mission name')
+    arfhdu.header.update('INSTRUME', 'SDD1', 'Instrument')
+    #arfhdu.header.update('CHANTYPE', 'PHA', 'Channels from detector electronics')
+    #arfhdu.header.update('DETCHANS', len(emin), 'total number of raw detector PHA channels')
+    arfhdu.header.update('HDUCLASS', 'OGIP', 'file format is OGIP standard')
+    arfhdu.header.update('HDUCLAS1', 'RESPONSE', 'extension contains response data')
+    arfhdu.header.update('HDUCLAS2', 'SPECRESP', 'extension contains a response matrix')
+    arf hdu.header.update('HDUVERS', '1.1.0', 'version of the file format')
+    # create primary FITS header
+    prihdr = pyfits.Header()
+    prihdu = pyfits.PrimaryHDU(header=prihdr)
+    # create HDUList with primary HDU and the data table extension
+    thdulist = pyfits.HDUList([prihdu, arfhdu])
+    # write to file
+    thdulist.writeto('halo_arf.fits', clobber=True)
+
+    # make .rmf file
+    # create EBOUNDS extension
+    chan = arange(0, len(emin), dtype='int16')
+    col1 = pyfits.Column(name='CHANNEL', format='I', array=chan)
+    col2 = pyfits.Column(name='E_MIN', format='1E', array=emin)
+    col3 = pyfits.Column(name='E_MAX', format='1E', array=emax)
+    # create a ColDefs (column-definitions) object for all columns:
+    cols = pyfits.ColDefs([col1, col2, col3])
+    # create a new binary table HDU object
+    eboundshdu = pyfits.new_table(cols)
+    eboundshdu.name = 'EBOUNDS'
+    eboundshdu.header.update('EXTNAME', 'EBOUNDS', 'Extension type')
+    eboundshdu.header.update('TELESCOP', 'HaloSat', 'Mission name')
+    eboundshdu.header.update('INSTRUME', 'SDD1', 'Instrument')
+    eboundshdu.header.update('CHANTYPE', 'PHA', 'Channels from detector electronics')
+    eboundshdu.header.update('DETCHANS', len(emin), 'total number of raw detector PHA channels')
+    eboundshdu.header.update('HDUCLASS', 'OGIP', 'file format is OGIP standard')
+    eboundshdu.header.update('HDUCLAS1', 'RESPONSE', 'extension contains response data')
+    eboundshdu.header.update('HDUCLAS2', 'EBOUNDS', 'extension contains a response matrix')
+    eboundshdu.header.update('HDUVERS', '1.3.0', 'version of the file format')
     n = len(emin)
     de = emin[1]-emin[0] # assumes uniform bins
     ener = 0.5*(emax+emin)
@@ -166,7 +166,7 @@ def createMatrix(e_res):
 
 # create evenly spaced values of the energy resolution
 # from 50 eV to 150 eV in steps of 5 eV
-ener_res = arange(75E-3,150E-3,1E-3)
+ener_res = arange(100E-3,500E-3,5E-3)
 # initialize empty array to store [total counts, lower bound, upper bound]
 tot_count_err = []
 

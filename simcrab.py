@@ -12,7 +12,7 @@ def fitCrab():
     Xset.xsect = "bcmc"
 
     # PyXspec operations:
-    m1 = Model("wabs(pow + gaussian)", setPars=(0.018, 1.52, 0.376, 0.7,0.1,0.25))
+    m1 = Model("wabs(pow + gaussian)", setPars=(0.018, 1.52, 0.376, 250,0.1,0.25))
     #m1 = Model("wabs(gaussian)", setPars=(0.018, 0.7, 0.1, 0.25))
     #m1 = Model("wabs(pow + gaussian)", setPars=(0.018))
     m1(1).frozen = True
