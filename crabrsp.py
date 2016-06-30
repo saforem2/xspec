@@ -29,27 +29,27 @@ def createMatrix(e_res):
     # should add silicon dead layer
     area = 0.25 # detector area in cm^2
 
-    plt.ion() # do plots in interactive mode
+    #plt.ion() # do plots in interactive mode
     # plot the spectrum
-    fig1 = plt.figure(1)
-    plt.clf()
-    plt.xlabel('Energy (keV)')
-    plt.ylabel('Response (cm^2)')
+    #fig1 = plt.figure(1)
+    #plt.clf()
+    #plt.xlabel('Energy (keV)')
+    #plt.ylabel('Response (cm^2)')
     # plt.xscale('log')
-    plt.plot(ener, area*c1 , '-b')
-    plt.plot(ener, area*c2 , '-r')
+    #plt.plot(ener, area*c1 , '-b')
+    #plt.plot(ener, area*c2 , '-r')
     #plt.show() # display the plot
-    plt.savefig('effective_area_energy.pdf',format='pdf')
+    #plt.savefig('effective_area_energy.pdf',format='pdf')
 
     # translate into energy bin lower and upper bounds and average response
     n = len(ener)
     emin = float32(ener[0:n-1])
     emax = float32(ener[1:n])
     resp = float32(area*0.5*(c1[0:n-1]+c1[1:n]))
-    fig2 = plt.figure()
-    plt.plot(0.5*(emin+emax), resp, '-k')
+    #fig2 = plt.figure()
+    #plt.plot(0.5*(emin+emax), resp, '-k')
     #plt.show()
-    plt.savefig('e_min_e_max_response.pdf',format='pdf')
+    #plt.savefig('e_min_e_max_response.pdf',format='pdf')
 
 
     # make .arf file
@@ -69,7 +69,7 @@ def createMatrix(e_res):
     arfhdu.header.update('HDUCLASS', 'OGIP', 'file format is OGIP standard')
     arfhdu.header.update('HDUCLAS1', 'RESPONSE', 'extension contains response data')
     arfhdu.header.update('HDUCLAS2', 'SPECRESP', 'extension contains a response matrix')
-    arf hdu.header.update('HDUVERS', '1.1.0', 'version of the file format')
+    arfhdu.header.update('HDUVERS', '1.1.0', 'version of the file format')
     # create primary FITS header
     prihdr = pyfits.Header()
     prihdu = pyfits.PrimaryHDU(header=prihdr)
@@ -166,7 +166,7 @@ def createMatrix(e_res):
 
 # create evenly spaced values of the energy resolution
 # from 50 eV to 150 eV in steps of 5 eV
-ener_res = arange(100E-3,500E-3,5E-3)
+ener_res = arange(75E-3,150E-3,1E-3)
 # initialize empty array to store [total counts, lower bound, upper bound]
 tot_count_err = []
 
@@ -180,7 +180,7 @@ for i in range(len(ener_res)):
     Plot.setRebin(3.0,12)
     Plot.add = 1
     Plot.xAxis = "keV"
-    Plot("data model")
+    Plot("data ratio")
     tot_count_err.append([norm_val,err_m,err_p])
 
 # convert the list (tot_count_err) to numpy array (x)
@@ -199,7 +199,7 @@ plt.xlabel('$\Delta E$ (eV)')
 plt.ylabel('counts')
 plt.title('Total Counts vs. Energy Resolution $(\Delta E)$')
 plt.savefig('crab_counts_vs_ener_res.pdf',type='pdf')
-plt.show()
+#plt.show()
 
 # clean up the unnecessary .fak data-files created from fakeit command
 filelist = [ f for f in os.listdir(".") if f.endswith(".fak") ]
