@@ -25,7 +25,8 @@ def createMatrix(e_res):
     c2 = c2[q]
     # replace with evenly spaced energies
     t = max(ener)+ener[1]-ener[0]
-    ener = arange(min(ener), t, (t-min(ener))/len(ener))
+    d_e = (e_res * (t-min(ener)))/len(ener)
+    ener = arange(min(ener), t, d_e)
     # should add silicon dead layer
     area = 0.25 # detector area in cm^2
 
@@ -45,7 +46,8 @@ def createMatrix(e_res):
     n = len(ener)
     emin = float32(ener[0:n-1])
     emax = float32(ener[1:n])
-    resp = float32(area*0.5*(c1[0:n-1]+c1[1:n]))
+    #resp = float32(area*0.5*(c1[0:n-1]+c1[1:n]))
+    resp = float32(area*0.5*(c1[0:n-1]))
     #fig2 = plt.figure()
     #plt.plot(0.5*(emin+emax), resp, '-k')
     #plt.show()
@@ -166,40 +168,43 @@ def createMatrix(e_res):
 
 # create evenly spaced values of the energy resolution
 # from 50 eV to 150 eV in steps of 5 eV
-ener_res = arange(75E-3,150E-3,1E-3)
+ener_res = arange(75E-2,200E-2,1E-2)
 # initialize empty array to store [total counts, lower bound, upper bound]
-tot_count_err = []
-
+sigma_err = []
 # Loop over all energy resolutions
 # and append NEW values of [total counts, lower bound, upper bound]
 for i in range(len(ener_res)):
     vals = createMatrix(ener_res[i])
-    norm_val = vals[0]
+    sigma_val = vals[0]
     err_m = list(vals[1])[0]
     err_p = list(vals[1])[1]
+
+    '''
     Plot.setRebin(3.0,12)
     Plot.add = 1
     Plot.xAxis = "keV"
     Plot("data ratio")
-    tot_count_err.append([norm_val,err_m,err_p])
+    '''
+    sigma_err.append([sigma_val,err_m,err_p])
 
 # convert the list (tot_count_err) to numpy array (x)
-x = array(tot_count_err)
+x = array(sigma_err)
 # define error bars
 #yerr_m = x[:,0] - x[:,1]
 #yerr_p = x[:,2] - x[:,0]
-y_err = abs(x[:,0] - ener_res)
+y_err = abs(x[:,0]-ener_res)
 
 # scale energy resolution from keV ---> eV for plotting
 ener_res_plot = 1000*ener_res
 fig3 = plt.figure()
-plt.errorbar(ener_res_plot, x[:,0], yerr = y_err, marker='o')
+#plt.errorbar(ener_res_plot, x[:,0], yerr = y_err, marker='o')
+plt.plot(ener_res_plot,y_err,'.k')
 plt.grid(True)
 plt.xlabel('$\Delta E$ (eV)')
-plt.ylabel('counts')
-plt.title('Total Counts vs. Energy Resolution $(\Delta E)$')
+plt.ylabel('$\sigma$')
+plt.title("Line Width vs. Energy Resolution")
 plt.savefig('crab_counts_vs_ener_res.pdf',type='pdf')
-#plt.show()
+plt.show()
 
 # clean up the unnecessary .fak data-files created from fakeit command
 filelist = [ f for f in os.listdir(".") if f.endswith(".fak") ]
